@@ -13,7 +13,18 @@ struct User {
     var phoneNumber: String?
     var profileURL: String?
     var description: String?
-    
+}
+
+extension User {
+    func toObject() -> UserObject {
+        .init(
+            id: id,
+            name: name,
+            phoneNumber: phoneNumber,
+            profileURL: profileURL,
+            description: description
+        )
+    }
 }
 
 extension User {
@@ -25,3 +36,4 @@ extension User {
         .init(id: "user2_id", name: "김코랄")
     }
 }
+ 

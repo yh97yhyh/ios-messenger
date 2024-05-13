@@ -129,10 +129,13 @@ struct HomeView: View {
                 RoundedRectangle(cornerRadius: 5)
                     .stroke(Color.greyLight)
             }
+            .onAppear {
+                viewModel.send(action: .getUser)
+            }
         }
     }
 }
 
 #Preview {
-    HomeView(viewModel: .init())
+    HomeView(viewModel: .init(container: .init(services: StubService()), userId: "user1_id"))
 }
