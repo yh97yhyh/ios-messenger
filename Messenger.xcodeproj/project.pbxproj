@@ -30,6 +30,10 @@
 		F8955BB72BEBE8EC0019EE2A /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = F8955BB62BEBE8EC0019EE2A /* GoogleSignIn */; };
 		F8955BBA2BEBE9A70019EE2A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8955BB92BEBE9A70019EE2A /* User.swift */; };
 		F8955BBC2BEBE9DE0019EE2A /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8955BBB2BEBE9DE0019EE2A /* ServiceError.swift */; };
+		F8F0CB602BF25781001F67ED /* MainTabType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F0CB5F2BF25781001F67ED /* MainTabType.swift */; };
+		F8F0CB652BF25823001F67ED /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F0CB642BF25823001F67ED /* HomeView.swift */; };
+		F8F0CB672BF2582B001F67ED /* ChatListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F0CB662BF2582B001F67ED /* ChatListView.swift */; };
+		F8F0CB692BF2595D001F67ED /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F0CB682BF2595D001F67ED /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +79,10 @@
 		F8955BB22BEBE5E10019EE2A /* LoginButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButtonStyle.swift; sourceTree = "<group>"; };
 		F8955BB92BEBE9A70019EE2A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F8955BBB2BEBE9DE0019EE2A /* ServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
+		F8F0CB5F2BF25781001F67ED /* MainTabType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabType.swift; sourceTree = "<group>"; };
+		F8F0CB642BF25823001F67ED /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		F8F0CB662BF2582B001F67ED /* ChatListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListView.swift; sourceTree = "<group>"; };
+		F8F0CB682BF2595D001F67ED /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,7 +215,9 @@
 			children = (
 				F8955B9B2BEBDD8F0019EE2A /* Authentication */,
 				F8955BAA2BEBE34A0019EE2A /* Login */,
-				F8955BAB2BEBE3600019EE2A /* MainTabView */,
+				F8955BAB2BEBE3600019EE2A /* MainTab */,
+				F8F0CB612BF25802001F67ED /* Home */,
+				F8F0CB622BF25807001F67ED /* ChatList */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -231,12 +241,13 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
-		F8955BAB2BEBE3600019EE2A /* MainTabView */ = {
+		F8955BAB2BEBE3600019EE2A /* MainTab */ = {
 			isa = PBXGroup;
 			children = (
 				F8955BAE2BEBE3830019EE2A /* MainTabView.swift */,
+				F8F0CB5F2BF25781001F67ED /* MainTabType.swift */,
 			);
-			path = MainTabView;
+			path = MainTab;
 			sourceTree = "<group>";
 		};
 		F8955BB82BEBE99A0019EE2A /* Model */ = {
@@ -245,6 +256,23 @@
 				F8955BB92BEBE9A70019EE2A /* User.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		F8F0CB612BF25802001F67ED /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F8F0CB642BF25823001F67ED /* HomeView.swift */,
+				F8F0CB682BF2595D001F67ED /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F8F0CB622BF25807001F67ED /* ChatList */ = {
+			isa = PBXGroup;
+			children = (
+				F8F0CB662BF2582B001F67ED /* ChatListView.swift */,
+			);
+			path = ChatList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -388,12 +416,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8F0CB692BF2595D001F67ED /* HomeViewModel.swift in Sources */,
 				F8955BA42BEBE03B0019EE2A /* AppDelegate.swift in Sources */,
 				F8955B672BEBDB530019EE2A /* AuthenticatedView.swift in Sources */,
 				F8955BAF2BEBE3830019EE2A /* MainTabView.swift in Sources */,
+				F8F0CB652BF25823001F67ED /* HomeView.swift in Sources */,
+				F8F0CB672BF2582B001F67ED /* ChatListView.swift in Sources */,
 				F8955B9D2BEBDDA80019EE2A /* AuthenticationViewModel.swift in Sources */,
 				F8955B992BEBDD260019EE2A /* Services.swift in Sources */,
 				F8955B962BEBDD070019EE2A /* DIContainer.swift in Sources */,
+				F8F0CB602BF25781001F67ED /* MainTabType.swift in Sources */,
 				F8955B652BEBDB530019EE2A /* MessengerApp.swift in Sources */,
 				F8955BA82BEBE15C0019EE2A /* AuthenticationService.swift in Sources */,
 				F8955BBC2BEBE9DE0019EE2A /* ServiceError.swift in Sources */,
