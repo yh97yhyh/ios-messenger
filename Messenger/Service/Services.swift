@@ -10,6 +10,7 @@ import Foundation
 protocol ServiceType {
     var authService: AuthenticationServiceType { get set }
     var userService: UserServiceType { get set }
+//    var contactService: ContactServiceType { get set }
 }
 
 class Services: ServiceType {
