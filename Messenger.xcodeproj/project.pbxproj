@@ -47,6 +47,7 @@
 		F8F0CB842BF3340A001F67ED /* HomeModelDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F0CB832BF3340A001F67ED /* HomeModelDestination.swift */; };
 		F8F0CB872BF33479001F67ED /* MyProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F0CB862BF33479001F67ED /* MyProfileView.swift */; };
 		F8F0CB8B2BF33492001F67ED /* OtherProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F0CB8A2BF33492001F67ED /* OtherProfileView.swift */; };
+		F8F0CB8D2BF337B5001F67ED /* ContactService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F0CB8C2BF337B5001F67ED /* ContactService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +109,7 @@
 		F8F0CB832BF3340A001F67ED /* HomeModelDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModelDestination.swift; sourceTree = "<group>"; };
 		F8F0CB862BF33479001F67ED /* MyProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileView.swift; sourceTree = "<group>"; };
 		F8F0CB8A2BF33492001F67ED /* OtherProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherProfileView.swift; sourceTree = "<group>"; };
+		F8F0CB8C2BF337B5001F67ED /* ContactService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,6 +240,7 @@
 				F8955BA72BEBE15C0019EE2A /* AuthenticationService.swift */,
 				F8955BBB2BEBE9DE0019EE2A /* ServiceError.swift */,
 				F8F0CB712BF2603E001F67ED /* UserService.swift */,
+				F8F0CB8C2BF337B5001F67ED /* ContactService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -503,6 +506,7 @@
 				F8955BAF2BEBE3830019EE2A /* MainTabView.swift in Sources */,
 				F8F0CB8B2BF33492001F67ED /* OtherProfileView.swift in Sources */,
 				F8F0CB652BF25823001F67ED /* HomeView.swift in Sources */,
+				F8F0CB8D2BF337B5001F67ED /* ContactService.swift in Sources */,
 				F8F0CB772BF26156001F67ED /* DBError.swift in Sources */,
 				F8F0CB672BF2582B001F67ED /* ChatListView.swift in Sources */,
 				F8955B9D2BEBDDA80019EE2A /* AuthenticationViewModel.swift in Sources */,
@@ -692,6 +696,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Messenger/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSContactsUsageDescription = "친구 목록을 가져옵니다.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -724,6 +729,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Messenger/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSContactsUsageDescription = "친구 목록을 가져옵니다.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
