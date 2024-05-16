@@ -55,47 +55,65 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "F964FAF8-1B87-451F-8BED-6BA7683936E8"
+            uuid = "8831DC1D-2738-486F-BE4C-01EBB6762533"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Messenger/Repository/UserDBRepository.swift"
+            filePath = "Messenger/View/Profile/MyProfileView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "120"
-            endingLineNumber = "120"
-            landmarkName = "addUserAfterContact(users:)"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
+            landmarkName = "descriptionView"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8E4FBF3E-7668-4838-AB2C-D1C18740E0DB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Messenger/View/Profile/MyProfileView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
+            landmarkName = "descriptionView"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6122B6A9-E1C2-49D9-94DF-0B45611BFCD8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Messenger/Service/PhotoPickerService/PhotoPickerService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "loadTransferable(from:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "F964FAF8-1B87-451F-8BED-6BA7683936E8 - b37de8ec6bf91d4e"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #3 (Messenger.UserObject, Swift.Optional&lt;Any&gt;) -&gt; Combine.Future&lt;(), Swift.Error&gt; in Messenger.UserDBRepository.addUserAfterContact(users: Swift.Array&lt;Messenger.UserObject&gt;) -&gt; Combine.AnyPublisher&lt;(), Messenger.DBError&gt;"
-                  moduleName = "Messenger"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yh/Desktop/project/Messenger/Messenger/Repository/UserDBRepository.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "120"
-                  endingLineNumber = "120">
-               </Location>
-               <Location
-                  uuid = "F964FAF8-1B87-451F-8BED-6BA7683936E8 - 77506011c8085a38"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 ((Swift.Result&lt;(), Swift.Error&gt;) -&gt; ()) -&gt; () in closure #3 (Messenger.UserObject, Swift.Optional&lt;Any&gt;) -&gt; Combine.Future&lt;(), Swift.Error&gt; in Messenger.UserDBRepository.addUserAfterContact(users: Swift.Array&lt;Messenger.UserObject&gt;) -&gt; Combine.AnyPublisher&lt;(), Messenger.DBError&gt;"
-                  moduleName = "Messenger"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yh/Desktop/project/Messenger/Messenger/Repository/UserDBRepository.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "120"
-                  endingLineNumber = "120">
-               </Location>
-            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7E60E32A-86E4-4B58-92A9-C540415880DE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Messenger/Service/PhotoPickerService/PhotoPickerService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "loadTransferable(from:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

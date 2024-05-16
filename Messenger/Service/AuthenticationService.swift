@@ -130,4 +130,3 @@ class StubAuthenticationService: AuthenticationServiceType {
         Empty().eraseToAnyPublisher()
     }
 }
-
