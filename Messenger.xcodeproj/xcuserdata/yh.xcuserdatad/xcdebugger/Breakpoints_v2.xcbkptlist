@@ -7,128 +7,124 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "CA1644D3-A533-4F48-AC42-7EDB329AF212"
+            uuid = "F15D86C1-28C7-4CFC-9C6D-92AE1957B888"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Messenger/View/Home/HomeViewModel.swift"
+            filePath = "Messenger/Service/ImageCache/DiskStorage.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
-            landmarkName = "send(action:)"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "store(for:image:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "A31F81BB-F017-4C0A-B900-CDB2DE825FCA"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Messenger/Service/ContactService.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
-            landmarkName = "fetchContacts(store:completion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "49C01A94-612E-4223-B699-D4C4775C39D2"
+            uuid = "2D83F49E-06C3-4698-9C3D-B604E60D3129"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Messenger/Service/ContactService.swift"
+            filePath = "Messenger/Service/ImageCache/ImageCacheSesrvice.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "67"
-            endingLineNumber = "67"
-            landmarkName = "fetchContacts(store:completion:)"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "image(for:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2D83F49E-06C3-4698-9C3D-B604E60D3129 - 486d8134e50934dc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.UIImage&gt;) -&gt; Combine.AnyPublisher&lt;Swift.Optional&lt;__C.UIImage&gt;, Swift.Never&gt; in Messenger.ImageCacheSesrvice.image(for: Swift.String) -&gt; Combine.AnyPublisher&lt;Swift.Optional&lt;__C.UIImage&gt;, Swift.Never&gt;"
+                  moduleName = "Messenger"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yh/Desktop/project/Messenger/Messenger/Service/ImageCache/ImageCacheSesrvice.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34">
+               </Location>
+               <Location
+                  uuid = "2D83F49E-06C3-4698-9C3D-B604E60D3129 - 486d8134e50934dc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.UIImage&gt;) -&gt; Combine.AnyPublisher&lt;Swift.Optional&lt;__C.UIImage&gt;, Swift.Never&gt; in Messenger.ImageCacheSesrvice.image(for: Swift.String) -&gt; Combine.AnyPublisher&lt;Swift.Optional&lt;__C.UIImage&gt;, Swift.Never&gt;"
+                  moduleName = "Messenger"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yh/Desktop/project/Messenger/Messenger/Service/ImageCache/ImageCacheSesrvice.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "8831DC1D-2738-486F-BE4C-01EBB6762533"
-            shouldBeEnabled = "No"
+            uuid = "993B0164-C9DA-444F-AD4B-56E597E78DD8"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Messenger/View/Profile/MyProfileView.swift"
+            filePath = "Messenger/Service/ImageCache/ImageCacheSesrvice.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "90"
-            endingLineNumber = "90"
-            landmarkName = "descriptionView"
-            landmarkType = "24">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "8E4FBF3E-7668-4838-AB2C-D1C18740E0DB"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Messenger/View/Profile/MyProfileView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "93"
-            endingLineNumber = "93"
-            landmarkName = "descriptionView"
-            landmarkType = "24">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "6122B6A9-E1C2-49D9-94DF-0B45611BFCD8"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Messenger/Service/PhotoPickerService/PhotoPickerService.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
-            landmarkName = "loadTransferable(from:)"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
+            landmarkName = "imageWithDiskCache(for:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "993B0164-C9DA-444F-AD4B-56E597E78DD8 - cdc0f6492690abc0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Optional&lt;__C.UIImage&gt;) -&gt; Combine.AnyPublisher&lt;Swift.Optional&lt;__C.UIImage&gt;, Swift.Never&gt; in Messenger.ImageCacheSesrvice.imageWithDiskCache(for: Swift.String) -&gt; Combine.AnyPublisher&lt;Swift.Optional&lt;__C.UIImage&gt;, Swift.Never&gt;"
+                  moduleName = "Messenger"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yh/Desktop/project/Messenger/Messenger/Service/ImageCache/ImageCacheSesrvice.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61">
+               </Location>
+               <Location
+                  uuid = "993B0164-C9DA-444F-AD4B-56E597E78DD8 - cdc0f6492690abc0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Optional&lt;__C.UIImage&gt;) -&gt; Combine.AnyPublisher&lt;Swift.Optional&lt;__C.UIImage&gt;, Swift.Never&gt; in Messenger.ImageCacheSesrvice.imageWithDiskCache(for: Swift.String) -&gt; Combine.AnyPublisher&lt;Swift.Optional&lt;__C.UIImage&gt;, Swift.Never&gt;"
+                  moduleName = "Messenger"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yh/Desktop/project/Messenger/Messenger/Service/ImageCache/ImageCacheSesrvice.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "7E60E32A-86E4-4B58-92A9-C540415880DE"
-            shouldBeEnabled = "No"
+            uuid = "DDCB9B28-7F44-433E-BBBC-5804CBC469AA"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Messenger/Service/PhotoPickerService/PhotoPickerService.swift"
+            filePath = "Messenger/Service/ImageCache/ImageCacheSesrvice.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "loadTransferable(from:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "F51044BC-23C7-4E87-8F44-63246F7C62DD"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Messenger/View/Profile/MyProfileViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
-            landmarkName = "updateProfileImage(pickerItem:)"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "imageWithDiskCache(for:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
