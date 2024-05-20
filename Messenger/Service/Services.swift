@@ -15,6 +15,7 @@ protocol ServiceType {
     var uploadService: UploadServiceType { get set }
     var imageCacheService: ImageCacheSesrviceType { get set }
     var chatRoomService: ChatRoomServiceType { get set }
+    var chatService: ChatServiceType { get set }
 }
 
 class Services: ServiceType {
@@ -26,6 +27,7 @@ class Services: ServiceType {
     var uploadService: UploadServiceType
     var imageCacheService: ImageCacheSesrviceType
     var chatRoomService: ChatRoomServiceType
+    var chatService: ChatServiceType
     
     init() {
         self.authService = AuthenticationService() 
@@ -34,7 +36,8 @@ class Services: ServiceType {
         self.photoPickerService = PhotoPickerService()
         self.uploadService = UploadService(provider: UploadProvider())
         self.imageCacheService = ImageCacheSesrvice(memorySotrage: MemoryStorage(), diskStorage: DiskStorage())
-        self.chatRoomService = ChatRoomService(dbRepository: ChatRoomDepository())
+        self.chatRoomService = ChatRoomService(dbRepository: ChatRoomDBRepository())
+        self.chatService = ChatService(dbRepository: ChatDBRepository())
     }
 }
 
@@ -46,4 +49,5 @@ class StubService: ServiceType {
     var uploadService: UploadServiceType = StubUploadService()
     var imageCacheService: ImageCacheSesrviceType = StubImageCacheSesrvice()
     var chatRoomService: ChatRoomServiceType = StubChatRoomService()
+    var chatService: ChatServiceType = StubChatService()
 }

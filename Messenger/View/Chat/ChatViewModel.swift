@@ -5,19 +5,27 @@
 //  Created by 영현 on 5/20/24.
 //
 
-import Foundation
 import Combine
+import SwiftUI
+import PhotosUI
 
 class ChatViewModel: ObservableObject {
     
     enum Action {
-        
+        case load
+        case addChat(String)
+        case uploadImage(PhotosPickerItem?)
     }
     
     @Published var chatDataList: [ChatData] = []
     @Published var myUser: User?
     @Published var otherUser: User?
     @Published var message: String = ""
+    @Published var imageSelection: PhotosPickerItem? {
+        didSet {
+            send(action: .uploadImage(imageSelection))
+        }
+    }
     
     private let chatRoomId: String
     private let myUserId: String
@@ -32,10 +40,20 @@ class ChatViewModel: ObservableObject {
         self.myUserId = myUserId
         self.otherUserId = otherUserId
         
+        bind()
+        
 //        updateChataDataList(.init(chatId: "chat1_id", userId: "user1_id", message: "Hello", date: Date()))
 //        updateChataDataList(.init(chatId: "chat2_id", userId: "user2_id", message: "World", date: Date()))
 //        updateChataDataList(.init(chatId: "chat3_id", userId: "user1_id", message: "!!", date: Date()))
 
+    }
+    
+    func bind() {
+        container.services.chatService.observeChat(chatRoomId: chatRoomId)
+            .sink { [weak self] chat in
+                guard let chat else { return }
+                self?.updateChataDataList(chat)
+            }.store(in: &subscriptions)
     }
     
     func updateChataDataList(_ chat: Chat) {
@@ -54,6 +72,64 @@ class ChatViewModel: ObservableObject {
     }
     
     func send(action: Action) {
+        switch action {
+        case .load:
+            Publishers.Zip(container.services.userService.getUser(userId: myUserId),
+                           container.services.userService.getUser(userId: otherUserId))
+            .sink { completion in
+                
+            } receiveValue: { [weak self] myUser, otherUser in
+                self?.myUser = myUser
+                self?.otherUser = otherUser
+            }.store(in: &subscriptions)
+            
+        case let .addChat(message):
+            let chat: Chat = .init(chatId: UUID().uuidString, userId: myUserId, message: message, date: Date())
+            container.services.chatService.addChat(chat, to: chatRoomId)
+                .flatMap { chat in
+                    self.container.services.chatRoomService.updateChatRoomLastMessage(
+                        chatRoomId: self.chatRoomId,
+                        myUserId: self.myUserId,
+                        myUserName: self.myUser?.name ?? "",
+                        otherUserId: self.otherUserId,
+                        lastMessage: chat.lastMessage )
+                }
+                .sink { completion in
+                    
+                } receiveValue: { [weak self]  _ in
+                    self?.message = ""
+                }.store(in: &subscriptions)
+            
+        case let .uploadImage(pickerItem):
+            /*
+             1. data
+             2. uploadService> Storage
+             3. chat > add
+             */
+            guard let pickerItem else { return }
+            container.services.photoPickerService.loadTransferable(from: pickerItem)
+                .flatMap { data in
+                    self.container.services.uploadService.uploadImage(source: .chat(chatRoomId: self.chatRoomId), data:data)
+                }
+                .flatMap { url in
+                    let chat: Chat = .init(chatId: UUID().uuidString, userId: self.myUserId, photoURL: url.absoluteString, date: Date())
+                    return self.container.services.chatService.addChat(chat, to: self.chatRoomId)
+                }
+                .flatMap { chat in
+                    self.container.services.chatRoomService.updateChatRoomLastMessage(
+                        chatRoomId: self.chatRoomId,
+                        myUserId: self.myUserId,
+                        myUserName: self.myUser?.name ?? "",
+                        otherUserId: self.otherUserId,
+                        lastMessage: chat.lastMessage )
+                }
+                .sink { completion in
+                    
+                } receiveValue: { _ in
+                    
+                }.store(in: &subscriptions )
+            
+        }
         
     }
 }
