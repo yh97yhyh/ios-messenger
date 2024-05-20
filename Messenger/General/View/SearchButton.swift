@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SearchButton: View {
     var body: some View {
-        NavigationLink(value: NavigationDestination.search) {
+//        NavigationLink(value: NavigationDestination.search) {
             ZStack {
                 Rectangle()
                     .foregroundColor(.clear)
@@ -27,7 +27,7 @@ struct SearchButton: View {
                 .padding(.leading, 22)
             }
             .padding(.horizontal, 22)
-        } 
+//        } 
     }
 }
 

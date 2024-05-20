@@ -47,6 +47,8 @@
 		F885423B2BFB3CB400DD3D9D /* ChatObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = F885423A2BFB3CB400DD3D9D /* ChatObject.swift */; };
 		F885423D2BFB3D4700DD3D9D /* ChatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F885423C2BFB3D4700DD3D9D /* ChatService.swift */; };
 		F885423F2BFB447200DD3D9D /* ChatImageItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F885423E2BFB447200DD3D9D /* ChatImageItemView.swift */; };
+		F88542422BFB724700DD3D9D /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88542412BFB724700DD3D9D /* SearchViewModel.swift */; };
+		F88542442BFB743800DD3D9D /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88542432BFB743800DD3D9D /* SearchBar.swift */; };
 		F8955B652BEBDB530019EE2A /* MessengerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8955B642BEBDB530019EE2A /* MessengerApp.swift */; };
 		F8955B672BEBDB530019EE2A /* AuthenticatedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8955B662BEBDB530019EE2A /* AuthenticatedView.swift */; };
 		F8955B692BEBDB540019EE2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8955B682BEBDB540019EE2A /* Assets.xcassets */; };
@@ -146,6 +148,8 @@
 		F885423A2BFB3CB400DD3D9D /* ChatObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatObject.swift; sourceTree = "<group>"; };
 		F885423C2BFB3D4700DD3D9D /* ChatService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatService.swift; sourceTree = "<group>"; };
 		F885423E2BFB447200DD3D9D /* ChatImageItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatImageItemView.swift; sourceTree = "<group>"; };
+		F88542412BFB724700DD3D9D /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		F88542432BFB743800DD3D9D /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		F8955B612BEBDB530019EE2A /* Messenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Messenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8955B642BEBDB530019EE2A /* MessengerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessengerApp.swift; sourceTree = "<group>"; };
 		F8955B662BEBDB530019EE2A /* AuthenticatedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticatedView.swift; sourceTree = "<group>"; };
@@ -326,6 +330,8 @@
 			isa = PBXGroup;
 			children = (
 				F83DEB702BF6662F00E78782 /* SearchView.swift */,
+				F88542412BFB724700DD3D9D /* SearchViewModel.swift */,
+				F88542432BFB743800DD3D9D /* SearchBar.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -729,6 +735,7 @@
 				F885422F2BFB12B000DD3D9D /* ChatData.swift in Sources */,
 				F83DEB452BF5E6C300E78782 /* UploadProvider.swift in Sources */,
 				F83DEB612BF6600E00E78782 /* ChatRoomDBRepository.swift in Sources */,
+				F88542442BFB743800DD3D9D /* SearchBar.swift in Sources */,
 				F83DEB4F2BF5EE6700E78782 /* MemoryStorage.swift in Sources */,
 				F83DEB3D2BF5E3D300E78782 /* PhotoImage.swift in Sources */,
 				F885423B2BFB3CB400DD3D9D /* ChatObject.swift in Sources */,
@@ -782,6 +789,7 @@
 				F83DEB6F2BF6662700E78782 /* ChatView.swift in Sources */,
 				F8955BBA2BEBE9A70019EE2A /* User.swift in Sources */,
 				F83DEB712BF6662F00E78782 /* SearchView.swift in Sources */,
+				F88542422BFB724700DD3D9D /* SearchViewModel.swift in Sources */,
 				F8955BB12BEBE52B0019EE2A /* LoginView.swift in Sources */,
 				F8F0CB792BF2630E001F67ED /* Constant.swift in Sources */,
 				F83DEB382BF5DC3A00E78782 /* MyProfileDescEditView.swift in Sources */,
