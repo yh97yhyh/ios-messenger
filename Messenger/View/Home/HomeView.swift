@@ -8,19 +8,18 @@
 import SwiftUI
 
 struct HomeView: View {
-    @EnvironmentObject var contianer: DIContainer
-    @EnvironmentObject var navigationRouter: NavigationRouter
+    @EnvironmentObject var container: DIContainer
     @StateObject var viewModel: HomeViewModel
     
     var body: some View {
-        NavigationStack(path: $navigationRouter.destinations) {
+        NavigationStack(path: $container.navigationRouter.destinations) {
             contentView
                 .fullScreenCover(item: $viewModel.modalDestination) {
                     switch $0 {
                     case .myProfile:
-                        MyProfileView(viewModel: .init(container: contianer, userId: viewModel.userId))
+                        MyProfileView(viewModel: .init(container: container, userId: viewModel.userId))
                     case let .otherProfile(userId):
-                        OtherProfileView(viewModel: .init(container: contianer, userId: userId)) { otherUserInfo in
+                        OtherProfileView(viewModel: .init(container: container, userId: userId)) { otherUserInfo in
                             viewModel.send(action: .goToChat(otherUserInfo))
                         }
                     case .setting:
@@ -187,7 +186,6 @@ struct HomeView: View {
 }
 
 #Preview {
-    HomeView(viewModel: .init(container: .init(services: StubService()), navigationRouter: NavigationRouter(), userId: "user1_id"))
+    HomeView(viewModel: .init(container: .init(services: StubService()), userId: "user1_id"))
         .environmentObject(DIContainer(services: StubService()))
-        .environmentObject(NavigationRouter())
 }

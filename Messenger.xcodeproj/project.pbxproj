@@ -57,13 +57,17 @@
 		F88542532BFDE18F00DD3D9D /* SettingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88542522BFDE18F00DD3D9D /* SettingItem.swift */; };
 		F88542562BFDE37B00DD3D9D /* AppearanceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88542552BFDE37B00DD3D9D /* AppearanceType.swift */; };
 		F88542582BFDE66D00DD3D9D /* AppearanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88542572BFDE66D00DD3D9D /* AppearanceController.swift */; };
+		F885425A2BFE57E200DD3D9D /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = F88542592BFE57E200DD3D9D /* FirebaseAuth */; };
+		F885425C2BFE57E200DD3D9D /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = F885425B2BFE57E200DD3D9D /* FirebaseDatabase */; };
+		F885425E2BFE57E200DD3D9D /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = F885425D2BFE57E200DD3D9D /* FirebaseMessaging */; };
+		F88542602BFE57E200DD3D9D /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = F885425F2BFE57E200DD3D9D /* FirebaseStorage */; };
+		F88542622BFE57E200DD3D9D /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = F88542612BFE57E200DD3D9D /* FirebaseStorageCombine-Community */; };
+		F88542642BFE57EC00DD3D9D /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = F88542632BFE57EC00DD3D9D /* GoogleSignIn */; };
 		F8955B652BEBDB530019EE2A /* MessengerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8955B642BEBDB530019EE2A /* MessengerApp.swift */; };
 		F8955B672BEBDB530019EE2A /* AuthenticatedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8955B662BEBDB530019EE2A /* AuthenticatedView.swift */; };
 		F8955B692BEBDB540019EE2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8955B682BEBDB540019EE2A /* Assets.xcassets */; };
 		F8955B6C2BEBDB540019EE2A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8955B6B2BEBDB540019EE2A /* Preview Assets.xcassets */; };
 		F8955B762BEBDB540019EE2A /* MessengerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8955B752BEBDB540019EE2A /* MessengerTests.swift */; };
-		F8955B802BEBDB540019EE2A /* MessengerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8955B7F2BEBDB540019EE2A /* MessengerUITests.swift */; };
-		F8955B822BEBDB540019EE2A /* MessengerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8955B812BEBDB540019EE2A /* MessengerUITestsLaunchTests.swift */; };
 		F8955B912BEBDB830019EE2A /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8955B902BEBDB830019EE2A /* Colors.xcassets */; };
 		F8955B932BEBDC130019EE2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8955B922BEBDC060019EE2A /* LaunchScreen.storyboard */; };
 		F8955B962BEBDD070019EE2A /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8955B952BEBDD070019EE2A /* DIContainer.swift */; };
@@ -102,13 +106,6 @@
 
 /* Begin PBXContainerItemProxy section */
 		F8955B722BEBDB540019EE2A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F8955B592BEBDB530019EE2A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F8955B602BEBDB530019EE2A;
-			remoteInfo = Messenger;
-		};
-		F8955B7C2BEBDB540019EE2A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F8955B592BEBDB530019EE2A /* Project object */;
 			proxyType = 1;
@@ -173,9 +170,6 @@
 		F8955B6B2BEBDB540019EE2A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F8955B712BEBDB540019EE2A /* MessengerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MessengerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8955B752BEBDB540019EE2A /* MessengerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessengerTests.swift; sourceTree = "<group>"; };
-		F8955B7B2BEBDB540019EE2A /* MessengerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MessengerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F8955B7F2BEBDB540019EE2A /* MessengerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessengerUITests.swift; sourceTree = "<group>"; };
-		F8955B812BEBDB540019EE2A /* MessengerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessengerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F8955B902BEBDB830019EE2A /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		F8955B922BEBDC060019EE2A /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F8955B952BEBDD070019EE2A /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
@@ -227,13 +221,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F8955B782BEBDB540019EE2A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				F885425E2BFE57E200DD3D9D /* FirebaseMessaging in Frameworks */,
+				F88542602BFE57E200DD3D9D /* FirebaseStorage in Frameworks */,
+				F88542622BFE57E200DD3D9D /* FirebaseStorageCombine-Community in Frameworks */,
+				F885425C2BFE57E200DD3D9D /* FirebaseDatabase in Frameworks */,
+				F885425A2BFE57E200DD3D9D /* FirebaseAuth in Frameworks */,
+				F88542642BFE57EC00DD3D9D /* GoogleSignIn in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,7 +389,6 @@
 			children = (
 				F8955B632BEBDB530019EE2A /* Messenger */,
 				F8955B742BEBDB540019EE2A /* MessengerTests */,
-				F8955B7E2BEBDB540019EE2A /* MessengerUITests */,
 				F8955B622BEBDB530019EE2A /* Products */,
 				F8F0CB6A2BF25D84001F67ED /* Frameworks */,
 			);
@@ -407,7 +399,6 @@
 			children = (
 				F8955B612BEBDB530019EE2A /* Messenger.app */,
 				F8955B712BEBDB540019EE2A /* MessengerTests.xctest */,
-				F8955B7B2BEBDB540019EE2A /* MessengerUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -447,15 +438,6 @@
 				F8955B752BEBDB540019EE2A /* MessengerTests.swift */,
 			);
 			path = MessengerTests;
-			sourceTree = "<group>";
-		};
-		F8955B7E2BEBDB540019EE2A /* MessengerUITests */ = {
-			isa = PBXGroup;
-			children = (
-				F8955B7F2BEBDB540019EE2A /* MessengerUITests.swift */,
-				F8955B812BEBDB540019EE2A /* MessengerUITestsLaunchTests.swift */,
-			);
-			path = MessengerUITests;
 			sourceTree = "<group>";
 		};
 		F8955B8E2BEBDB670019EE2A /* Resource */ = {
@@ -673,27 +655,17 @@
 				F8955B732BEBDB540019EE2A /* PBXTargetDependency */,
 			);
 			name = MessengerTests;
+			packageProductDependencies = (
+				F88542592BFE57E200DD3D9D /* FirebaseAuth */,
+				F885425B2BFE57E200DD3D9D /* FirebaseDatabase */,
+				F885425D2BFE57E200DD3D9D /* FirebaseMessaging */,
+				F885425F2BFE57E200DD3D9D /* FirebaseStorage */,
+				F88542612BFE57E200DD3D9D /* FirebaseStorageCombine-Community */,
+				F88542632BFE57EC00DD3D9D /* GoogleSignIn */,
+			);
 			productName = MessengerTests;
 			productReference = F8955B712BEBDB540019EE2A /* MessengerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		F8955B7A2BEBDB540019EE2A /* MessengerUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F8955B8B2BEBDB540019EE2A /* Build configuration list for PBXNativeTarget "MessengerUITests" */;
-			buildPhases = (
-				F8955B772BEBDB540019EE2A /* Sources */,
-				F8955B782BEBDB540019EE2A /* Frameworks */,
-				F8955B792BEBDB540019EE2A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F8955B7D2BEBDB540019EE2A /* PBXTargetDependency */,
-			);
-			name = MessengerUITests;
-			productName = MessengerUITests;
-			productReference = F8955B7B2BEBDB540019EE2A /* MessengerUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -709,10 +681,6 @@
 						CreatedOnToolsVersion = 15.3;
 					};
 					F8955B702BEBDB540019EE2A = {
-						CreatedOnToolsVersion = 15.3;
-						TestTargetID = F8955B602BEBDB530019EE2A;
-					};
-					F8955B7A2BEBDB540019EE2A = {
 						CreatedOnToolsVersion = 15.3;
 						TestTargetID = F8955B602BEBDB530019EE2A;
 					};
@@ -737,7 +705,6 @@
 			targets = (
 				F8955B602BEBDB530019EE2A /* Messenger */,
 				F8955B702BEBDB540019EE2A /* MessengerTests */,
-				F8955B7A2BEBDB540019EE2A /* MessengerUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -756,13 +723,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F8955B6F2BEBDB540019EE2A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F8955B792BEBDB540019EE2A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -865,15 +825,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F8955B772BEBDB540019EE2A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F8955B822BEBDB540019EE2A /* MessengerUITestsLaunchTests.swift in Sources */,
-				F8955B802BEBDB540019EE2A /* MessengerUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -881,11 +832,6 @@
 			isa = PBXTargetDependency;
 			target = F8955B602BEBDB530019EE2A /* Messenger */;
 			targetProxy = F8955B722BEBDB540019EE2A /* PBXContainerItemProxy */;
-		};
-		F8955B7D2BEBDB540019EE2A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F8955B602BEBDB530019EE2A /* Messenger */;
-			targetProxy = F8955B7C2BEBDB540019EE2A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1084,7 +1030,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 96KDP35MCD;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.zeroh.MessengerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1104,7 +1050,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 96KDP35MCD;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.zeroh.MessengerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1112,42 +1058,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Messenger.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Messenger";
-			};
-			name = Release;
-		};
-		F8955B8C2BEBDB540019EE2A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 96KDP35MCD;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.zeroh.MessengerUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Messenger;
-			};
-			name = Debug;
-		};
-		F8955B8D2BEBDB540019EE2A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 96KDP35MCD;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.zeroh.MessengerUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Messenger;
 			};
 			name = Release;
 		};
@@ -1177,15 +1087,6 @@
 			buildConfigurations = (
 				F8955B892BEBDB540019EE2A /* Debug */,
 				F8955B8A2BEBDB540019EE2A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F8955B8B2BEBDB540019EE2A /* Build configuration list for PBXNativeTarget "MessengerUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F8955B8C2BEBDB540019EE2A /* Debug */,
-				F8955B8D2BEBDB540019EE2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1221,6 +1122,36 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F8955BA02BEBDFF40019EE2A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = "FirebaseStorageCombine-Community";
+		};
+		F88542592BFE57E200DD3D9D /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F8955BA02BEBDFF40019EE2A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		F885425B2BFE57E200DD3D9D /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F8955BA02BEBDFF40019EE2A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		F885425D2BFE57E200DD3D9D /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F8955BA02BEBDFF40019EE2A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		F885425F2BFE57E200DD3D9D /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F8955BA02BEBDFF40019EE2A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		F88542612BFE57E200DD3D9D /* FirebaseStorageCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F8955BA02BEBDFF40019EE2A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseStorageCombine-Community";
+		};
+		F88542632BFE57EC00DD3D9D /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F8955BB52BEBE8EC0019EE2A /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
 		};
 		F8955BA12BEBDFF40019EE2A /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;

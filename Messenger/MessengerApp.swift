@@ -15,8 +15,11 @@ struct MessengerApp: App {
 
     var body: some Scene {
         WindowGroup {
-            AuthenticatedView(authViewModel: .init(container: container), navigationRouter: .init(), searchDataController: .init(), appearanceController: .init(appearanceValue))
+            AuthenticatedView(authViewModel: .init(container: container))
                 .environmentObject(container)
+                .onAppear {
+                    container.appearanceController.changeAppearance(AppearanceType(rawValue: appearanceValue))
+                }
         }
     }
 }

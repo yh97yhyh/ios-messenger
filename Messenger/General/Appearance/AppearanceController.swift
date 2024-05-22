@@ -6,16 +6,34 @@
 //
 
 import Foundation
+import Combine
 
-class AppearanceController: ObservableObject {
+protocol AppearanceControllerable {
+    var appearance: AppearanceType { get set }
     
-    @Published var appearance: AppearanceType
+    func changeAppearance(_ willBeAppearance: AppearanceType?)
+    func setObjectWillChange(_ objectWillChange: ObservableObjectPublisher)
+}
+
+class AppearanceController: AppearanceControllerable {
     
-    init(_ appearanceValue: Int) {
-        self.appearance = AppearanceType(rawValue: appearanceValue) ?? .automatic
+    var objectWillChange: ObservableObjectPublisher?
+    
+    var appearance: AppearanceType = .automatic {
+        didSet {
+            objectWillChange?.send()
+        }
     }
     
-    func changeAppearance(_ willBeAppearance: AppearanceType) {
-        appearance = willBeAppearance
+//    init(_ appearanceValue: Int) {
+//        self.appearance = AppearanceType(rawValue: appearanceValue) ?? .automatic
+//    }
+    
+    func changeAppearance(_ willBeAppearance: AppearanceType?) {
+        appearance = willBeAppearance ?? .automatic
+    }
+    
+    func setObjectWillChange(_ objectWillChange: ObservableObjectPublisher) {
+        self.objectWillChange = objectWillChange
     }
 }

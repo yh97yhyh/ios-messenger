@@ -8,9 +8,13 @@
 import Foundation
 import CoreData
 
-class SearchDataController: ObservableObject {
+protocol DataControllerable {
+    var persistantContainer: NSPersistentContainer { get set }
+}
+
+class SearchDataController: DataControllerable {
     
-    let persistantContainer = NSPersistentContainer(name: "Search")
+    var persistantContainer = NSPersistentContainer(name: "Search")
     
     init() {
         persistantContainer.loadPersistentStores { description, error in
