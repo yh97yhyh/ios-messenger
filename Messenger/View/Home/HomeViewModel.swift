@@ -13,8 +13,9 @@ class HomeViewModel: ObservableObject {
     enum Action {
         case load
         case requestContacts
-        case presentMyProfileView
-        case presentOtherProfileView(String)
+        case presentView(HomeModelDestination)
+//        case presentMyProfileView
+//        case presentOtherProfileView(String)
         case goToChat(User)
     }
     
@@ -71,11 +72,14 @@ class HomeViewModel: ObservableObject {
                     self?.users = users
                 }.store(in: &subscriptions)
             
-        case .presentMyProfileView:
-            modalDestination = .myProfile
+        case let .presentView(destination):
+            modalDestination = destination
             
-        case let .presentOtherProfileView(userId):
-            modalDestination = .otherProfile(userId)
+//        case .presentMyProfileView:
+//            modalDestination = .myProfile
+//            
+//        case let .presentOtherProfileView(userId):
+//            modalDestination = .otherProfile(userId)
             
         case let .goToChat(otherUser):
             // ChatRooms/myUserId/otherUserId

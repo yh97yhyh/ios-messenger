@@ -10,6 +10,7 @@ import Foundation
 enum HomeModelDestination: Hashable, Identifiable {
     case myProfile
     case otherProfile(String)
+    case setting
     
     var id: Int {
         hashValue
