@@ -14,10 +14,9 @@ protocol NavigationRoutable {
     func push(to view: NavigationDestination)
     func pop()
     func popToRootView()
-    func setObjectWillChange(_ objectWillChange: ObservableObjectPublisher?)
 }
 
-class NavigationRouter: NavigationRoutable {
+class NavigationRouter: NavigationRoutable, ObservableObjectSettable {
     
     var objectWillChange: ObservableObjectPublisher?
     
@@ -38,8 +37,5 @@ class NavigationRouter: NavigationRoutable {
     func popToRootView() {
         destinations = []
     }
-    
-    func setObjectWillChange(_ objectWillChange: ObservableObjectPublisher?) {
-        self.objectWillChange = objectWillChange
-    }
+
 }

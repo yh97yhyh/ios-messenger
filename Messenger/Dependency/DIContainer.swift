@@ -10,13 +10,13 @@ import Foundation
 class DIContainer: ObservableObject {
     var services: ServiceType
     var searchDataController: DataControllerable
-    var navigationRouter: NavigationRoutable
-    var appearanceController: AppearanceControllerable
+    var navigationRouter: NavigationRoutable & ObservableObjectSettable
+    var appearanceController: AppearanceControllerable & ObservableObjectSettable
     
     init(services: ServiceType,
          searchDataController: DataControllerable = SearchDataController(),
-         navigationRouter: NavigationRoutable = NavigationRouter(),
-         appearanceController: AppearanceControllerable = AppearanceController()) {
+         navigationRouter: NavigationRoutable & ObservableObjectSettable = NavigationRouter(),
+         appearanceController: AppearanceControllerable & ObservableObjectSettable = AppearanceController()) {
         self.services = services
         self.searchDataController = searchDataController
         self.navigationRouter = navigationRouter

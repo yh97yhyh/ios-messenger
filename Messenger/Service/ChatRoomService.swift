@@ -50,7 +50,7 @@ class ChatRoomService: ChatRoomServiceType {
     }
     
     func updateChatRoomLastMessage(chatRoomId: String, myUserId: String, myUserName: String, otherUserId: String, lastMessage: String) -> AnyPublisher<Void, ServiceError> {
-        return dbRepository.uploadChatRoomLastMessage(chatRoomId: chatRoomId, myUserId: myUserId, myUserName: myUserName, otherUserId: otherUserId, lastMessage: lastMessage)
+        dbRepository.updateChatRoomLastMessage(chatRoomId: chatRoomId, myUserId: myUserId, myUserName: myUserName, otherUserId: otherUserId, lastMessage: lastMessage)
             .mapError { ServiceError.error($0) }
             .eraseToAnyPublisher()
     }

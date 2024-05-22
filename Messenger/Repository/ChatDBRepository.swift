@@ -7,7 +7,6 @@
 
 import Foundation
 import Combine
-import FirebaseDatabase
 
 protocol ChatDBRepositoryType {
     func addChat(_ object: ChatObject, to chatRoomId: String) -> AnyPublisher<Void, DBError>
@@ -17,46 +16,30 @@ protocol ChatDBRepositoryType {
 }
 
 class ChatDBRepository: ChatDBRepositoryType {
-    var db: DatabaseReference = Database.database().reference()
     
-    var observedHandlers: [UInt] = []
+    private let reference: DBReferenceType
+    
+    init(reference: DBReferenceType) {
+        self.reference = reference
+    }
     
     func addChat(_ object: ChatObject, to chatRoomId: String) -> AnyPublisher<Void, DBError> {
         Just(object)
             .compactMap { try? JSONEncoder().encode($0) }
             .compactMap { try? JSONSerialization.jsonObject(with: $0, options: .fragmentsAllowed) }
-            .flatMap { value in
-                Future<Void, Error> { [weak self] promise in
-                    self?.db.child(DBKey.Chats).child(chatRoomId).child(object.chatId).setValue(value) { error, _ in
-                        if let error {
-                            promise(.failure(error))
-                        } else {
-                            promise (.success(()))
-                        }
-                    }
-                    
-                }
+            .flatMap { [weak self] value -> AnyPublisher<Void, DBError> in
+                guard let `self` = self else { return Empty().eraseToAnyPublisher() }
+                return self.reference.setValue(key: DBKey.Chats, path: "\(chatRoomId)/\(object.chatId)", value: value)
             }
-            .mapError { DBError.error($0) }
             .eraseToAnyPublisher()
     }
     
     func childByAutoId(chatRoomId: String) -> String {
-        let ref = db.child(DBKey.Chats).child(chatRoomId).childByAutoId()
-        return ref.key ?? ""
+        reference.childByAutoId(key: DBKey.Chats, path: chatRoomId) ?? ""
     }
     
     func observeChat(chatRoomId: String) -> AnyPublisher<ChatObject?, DBError> {
-        let subject = PassthroughSubject<Any?, DBError>()
-        
-        // Chats/chatroomId
-        let handler = db.child(DBKey.Chats).child(chatRoomId).observe(.childAdded) { snapshot in
-            subject.send(snapshot.value)
-        }
-        
-        observedHandlers.append(handler)
-        
-        return subject
+        reference.observeChildAdded(key: DBKey.Chats, path: chatRoomId)
             .flatMap { value in
                 if let value {
                     return Just(value)
@@ -72,8 +55,6 @@ class ChatDBRepository: ChatDBRepositoryType {
     }
     
     func removeObservedHandlers() {
-        observedHandlers.forEach {
-            db.removeObserver(withHandle: $0)
-        }
+        reference.removeObservedHandlers()
     }
 }
