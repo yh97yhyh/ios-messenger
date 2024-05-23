@@ -65,11 +65,13 @@
 		F88542642BFE57EC00DD3D9D /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = F88542632BFE57EC00DD3D9D /* GoogleSignIn */; };
 		F88542682BFE61E500DD3D9D /* ObservableObjectSettable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88542672BFE61E500DD3D9D /* ObservableObjectSettable.swift */; };
 		F885426B2BFE62AE00DD3D9D /* DBReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = F885426A2BFE62AE00DD3D9D /* DBReference.swift */; };
+		F885426D2BFE661F00DD3D9D /* UserDBRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F885426C2BFE661F00DD3D9D /* UserDBRepositoryTests.swift */; };
+		F88542742BFFAF5000DD3D9D /* ChatRoomServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88542732BFFAF5000DD3D9D /* ChatRoomServiceTests.swift */; };
+		F88542772BFFB04000DD3D9D /* ChatViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88542762BFFB04000DD3D9D /* ChatViewModelTests.swift */; };
 		F8955B652BEBDB530019EE2A /* MessengerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8955B642BEBDB530019EE2A /* MessengerApp.swift */; };
 		F8955B672BEBDB530019EE2A /* AuthenticatedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8955B662BEBDB530019EE2A /* AuthenticatedView.swift */; };
 		F8955B692BEBDB540019EE2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8955B682BEBDB540019EE2A /* Assets.xcassets */; };
 		F8955B6C2BEBDB540019EE2A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8955B6B2BEBDB540019EE2A /* Preview Assets.xcassets */; };
-		F8955B762BEBDB540019EE2A /* MessengerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8955B752BEBDB540019EE2A /* MessengerTests.swift */; };
 		F8955B912BEBDB830019EE2A /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8955B902BEBDB830019EE2A /* Colors.xcassets */; };
 		F8955B932BEBDC130019EE2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8955B922BEBDC060019EE2A /* LaunchScreen.storyboard */; };
 		F8955B962BEBDD070019EE2A /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8955B952BEBDD070019EE2A /* DIContainer.swift */; };
@@ -167,13 +169,15 @@
 		F88542572BFDE66D00DD3D9D /* AppearanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceController.swift; sourceTree = "<group>"; };
 		F88542672BFE61E500DD3D9D /* ObservableObjectSettable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableObjectSettable.swift; sourceTree = "<group>"; };
 		F885426A2BFE62AE00DD3D9D /* DBReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBReference.swift; sourceTree = "<group>"; };
+		F885426C2BFE661F00DD3D9D /* UserDBRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDBRepositoryTests.swift; sourceTree = "<group>"; };
+		F88542732BFFAF5000DD3D9D /* ChatRoomServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomServiceTests.swift; sourceTree = "<group>"; };
+		F88542762BFFB04000DD3D9D /* ChatViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModelTests.swift; sourceTree = "<group>"; };
 		F8955B612BEBDB530019EE2A /* Messenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Messenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8955B642BEBDB530019EE2A /* MessengerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessengerApp.swift; sourceTree = "<group>"; };
 		F8955B662BEBDB530019EE2A /* AuthenticatedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticatedView.swift; sourceTree = "<group>"; };
 		F8955B682BEBDB540019EE2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8955B6B2BEBDB540019EE2A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F8955B712BEBDB540019EE2A /* MessengerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MessengerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F8955B752BEBDB540019EE2A /* MessengerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessengerTests.swift; sourceTree = "<group>"; };
 		F8955B902BEBDB830019EE2A /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		F8955B922BEBDC060019EE2A /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F8955B952BEBDD070019EE2A /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
@@ -415,6 +419,30 @@
 			path = Error;
 			sourceTree = "<group>";
 		};
+		F885426E2BFE662600DD3D9D /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				F885426C2BFE661F00DD3D9D /* UserDBRepositoryTests.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		F88542722BFFAF4300DD3D9D /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				F88542732BFFAF5000DD3D9D /* ChatRoomServiceTests.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		F88542752BFFB02700DD3D9D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F88542762BFFB04000DD3D9D /* ChatViewModelTests.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		F8955B582BEBDB530019EE2A = {
 			isa = PBXGroup;
 			children = (
@@ -468,7 +496,9 @@
 		F8955B742BEBDB540019EE2A /* MessengerTests */ = {
 			isa = PBXGroup;
 			children = (
-				F8955B752BEBDB540019EE2A /* MessengerTests.swift */,
+				F88542752BFFB02700DD3D9D /* ViewModel */,
+				F88542722BFFAF4300DD3D9D /* Service */,
+				F885426E2BFE662600DD3D9D /* Repository */,
 			);
 			path = MessengerTests;
 			sourceTree = "<group>";
@@ -853,7 +883,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8955B762BEBDB540019EE2A /* MessengerTests.swift in Sources */,
+				F88542742BFFAF5000DD3D9D /* ChatRoomServiceTests.swift in Sources */,
+				F88542772BFFB04000DD3D9D /* ChatViewModelTests.swift in Sources */,
+				F885426D2BFE661F00DD3D9D /* UserDBRepositoryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1063,6 +1095,7 @@
 				DEVELOPMENT_TEAM = 96KDP35MCD;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACH_O_TYPE = mh_execute;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.zeroh.MessengerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1083,6 +1116,7 @@
 				DEVELOPMENT_TEAM = 96KDP35MCD;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACH_O_TYPE = mh_execute;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.zeroh.MessengerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1139,7 +1173,7 @@
 			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 7.1.0;
+				minimumVersion = 7.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

@@ -53,11 +53,11 @@ class ChatViewModel: ObservableObject {
         container.services.chatService.observeChat(chatRoomId: chatRoomId)
             .sink { [weak self] chat in
                 guard let chat else { return }
-                self?.updateChataDataList(chat)
+                self?.updateChatDataList(chat)
             }.store(in: &subscriptions)
     }
     
-    func updateChataDataList(_ chat: Chat) {
+    func updateChatDataList(_ chat: Chat) {
         let key = chat.date.toChatDateKey
         
         if let index = chatDataList.firstIndex(where: { $0.dateStr == key }) {
