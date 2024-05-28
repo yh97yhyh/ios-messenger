@@ -75,7 +75,7 @@ class ChatRoomDBRepository: ChatRoomDBRepositoryType {
             "\(DBKey.ChatRooms)/\(otherUserId)/\(myUserId)/lastMessage" : lastMessage,
             "\(DBKey.ChatRooms)/\(otherUserId)/\(myUserId)/chatRoomId" : chatRoomId,
             "\(DBKey.ChatRooms)/\(otherUserId)/\(myUserId)/otherUserName" : myUserName,
-            "\(DBKey.ChatRooms)/\(otherUserId)/\(myUserId)/otherUseId" : myUserId,
+            "\(DBKey.ChatRooms)/\(otherUserId)/\(myUserId)/otherUserId" : myUserId,
         ]
         
         return reference.setValues(values)

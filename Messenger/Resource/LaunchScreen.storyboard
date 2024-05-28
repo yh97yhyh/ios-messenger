@@ -23,18 +23,20 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="C9R-3f-MkM">
-                                <rect key="frame" x="146.66666666666666" y="388.66666666666669" width="100" height="100"/>
-                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Messenger" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vi0-YF-UGO">
+                                <rect key="frame" x="131.66666666666669" y="410" width="129.66666666666669" height="32.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" name="bg-wh"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
-                        <color key="backgroundColor" name="line-app-color"/>
                         <constraints>
                             <constraint firstItem="Bcu-3y-fUS" firstAttribute="centerX" secondItem="obG-Y5-kRd" secondAttribute="centerX" id="5cz-MP-9tL"/>
-                            <constraint firstItem="C9R-3f-MkM" firstAttribute="centerX" secondItem="Bcu-3y-fUS" secondAttribute="centerX" id="N1X-pU-bgG"/>
                             <constraint firstItem="obG-Y5-kRd" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" constant="20" symbolic="YES" id="SfN-ll-jLj"/>
+                            <constraint firstItem="vi0-YF-UGO" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="UCk-hM-3rn"/>
                             <constraint firstAttribute="bottom" secondItem="obG-Y5-kRd" secondAttribute="bottom" constant="20" id="Y44-ml-fuU"/>
-                            <constraint firstItem="C9R-3f-MkM" firstAttribute="centerY" secondItem="Bcu-3y-fUS" secondAttribute="centerY" id="j3Z-qV-B4O"/>
+                            <constraint firstItem="vi0-YF-UGO" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="nJZ-k6-wjz"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -44,9 +46,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="icon" width="100" height="100"/>
-        <namedColor name="line-app-color">
-            <color red="0.125" green="0.80800002813339233" blue="0.46700000762939453" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="bg-wh">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

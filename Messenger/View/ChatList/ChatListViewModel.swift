@@ -29,8 +29,9 @@ class ChatListViewModel: ObservableObject {
         case .load:
             container.services.chatRoomService.loadChatRooms(myUserId: userId)
                 .sink { completion in
-                    
+                    print("completion : \(completion)")
                 } receiveValue: { [weak self] chatRooms in
+                    print("chatRooms : \(chatRooms)")
                     self?.chatRooms = chatRooms
                 }.store(in: &subscriptions)
         }

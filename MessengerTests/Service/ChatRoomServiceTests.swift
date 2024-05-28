@@ -57,7 +57,7 @@ final class ChatRoomServiceTests: XCTestCase {
             }.store(in: &subscriptions)
 
         XCTAssertNotNil(result)
-        XCTAssertEqual(result?.otherUseId, "user2_id")
+        XCTAssertEqual(result?.otherUserId, "user2_id")
         XCTAssertEqual(result?.otherUserName, "user2")
         
         XCTAssertEqual(mockDBRepository.getChatRoomCallCount, 1)
